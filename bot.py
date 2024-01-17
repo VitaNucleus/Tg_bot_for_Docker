@@ -18,7 +18,7 @@ def echo(update, context):
 
 # Определяем функцию main для запуска бота
 def main():
-    application = Application.builder().token('1737398905:AAEZykHIdC_oTIBAJO2YCT0gfVQlhbGDQcQ').build()
+    application = Application.builder().token('').build()
 
     # Commands
     application.add_handler(CommandHandler('start', start))
@@ -27,7 +27,7 @@ def main():
     # Run bot
     application.run_polling(1.0)
     # Создаем объект Updater и передаем ему токен вашего бота
-    # bot = Bot(token='1737398905:AAEZykHIdC_oTIBAJO2YCT0gfVQlhbGDQcQ')
+    # bot = Bot(token='')
     # update_queue = Queue()
     #
     # updater = Updater(bot, update_queue)
